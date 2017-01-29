@@ -20,6 +20,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublish": "jake lib/index.js"
+    "prepublish": "jake lib/index.js",
+
+    "build": "rm build/CSSOM.js && jake Jakefile.js default",
+    "lib": "rm lib/index.js && jake Jakefile.js lib"
   }
 }
